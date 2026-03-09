@@ -3,6 +3,7 @@ import os
 
 # ensure project root is on sys.path for CI environments where tests run in a subdirectory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# note: templates directory requires jinja2 installed
 
 from fastapi.testclient import TestClient
 
