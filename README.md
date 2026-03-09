@@ -25,9 +25,9 @@ This is a simple sample project that uses FastAPI to serve an HTML/CSS webpage. 
    ```
 4. Run the app:
    ```bash
-   uvicorn main:app --reload
+   uvicorn main:app --reload --port 8080
    ```
-5. Navigate to `http://127.0.0.1:8000` in your browser.
+5. Navigate to `http://127.0.0.1:8080` in your browser.
 
 ## Running Tests
 
