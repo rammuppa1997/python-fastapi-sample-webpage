@@ -14,3 +14,8 @@ templates = Jinja2Templates(directory="templates")
 def read_root(request: Request):
     """Serve the home page."""
     return templates.TemplateResponse("index.html", {"request": request})
+
+@app.get("/about", response_class=HTMLResponse)
+def read_about(request: Request):
+    """Serve the about page."""
+    return templates.TemplateResponse("about.html", {"request": request})
